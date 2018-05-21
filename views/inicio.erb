@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+   <DisplayForm>
+      <Script>
+         <![CDATA[
+         <UiScreen>
+          <Title><%= @param[:objtitle] %></Title>
+            <LinkScreen>
+               <LinkControl>
+                  <LinkItem href="./NewFunc">
+                    <Label ><%= @param[:newFunc] %></Label>
+                  </LinkItem>
+                  <LinkItem href="./OldFunc">
+                    <Label ><%= @param[:oldFunc] %></Label>
+                  </LinkItem>
+               </LinkControl>
+            </LinkScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayForm>
+   </SerioCommands>  

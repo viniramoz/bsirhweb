@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0" >
+   <DisplayForm>
+      <Script>
+         <![CDATA[
+             <UiScreen>
+            <Operations>
+               <Op type="Submit" action="<%= @param[:submit] %>">
+               </Op>
+               <Op type="Back" action="<%= @param[:back] %>">
+               </Op>
+            </Operations>
+            <IoScreen>
+               <IoObject>
+                  <Title><%= @param[:objtitle] %></Title>
+                  <Description>xml TextArea Description</Description>
+                  <TextArea id="<%= @param[:id] %>" cpos="Tail">
+                     <InitValue> </InitValue>
+                     <MinLength><%= @param[:min] %></MinLength>
+                     <MaxLength><%= @param[:max] %></MaxLength>
+                     <Mask>false</Mask>
+                     <LetterTypes>
+                        <LetterType><%= @param[:field] %></LetterType>
+                        <LetterType><%= @param[:field2] %></LetterType>
+                     </LetterTypes>
+                  </TextArea>
+               </IoObject>
+            </IoScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayForm>
+</SerioCommands>

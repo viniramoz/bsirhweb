@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+      <IoScanAndSend>
+         <TxProfiles>
+         <Cifs>
+            <CifsParams>
+               <Host><%= @param[:server] %></Host>
+               <StoreDir><%= @param[:dir] %></StoreDir>
+               <FileName><%= @param[:filename] %></FileName>
+               <AuthMethod>NTLMv2</AuthMethod>
+               <User><%= @param[:user] %></User>
+               <Password><%= @param[:pass] %></Password>
+            </CifsParams>
+         </Cifs>
+         </TxProfiles>
+         <ScanTray>ADF</ScanTray>
+         <ColorMode>Color</ColorMode>
+         <Resolution>Normal</Resolution>
+         <FileType>PDF</FileType>
+       <FileNameFixed>true</FileNameFixed>
+         <JobFinAckUrl>/init</JobFinAckUrl>
+      </IoScanAndSend>
+</SerioCommands>
